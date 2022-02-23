@@ -9,6 +9,7 @@ class Solution(object):
         r = len(nums) - 1
         while l <= r:
             middle = (l + r) // 2
+            print(middle)
             if nums[middle] == target:
                 return middle
             elif nums[middle] > target:
@@ -16,3 +17,4 @@ class Solution(object):
             else:
                 l = middle + 1
         return -1
+
